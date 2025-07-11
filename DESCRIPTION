@@ -1,13 +1,14 @@
 Type: Package
 Package: stochLAB
 Title: Stochastic Collision Risk Model
-Version: 1.1.2
+Version: 1.1.3
 Authors@R: c(
     person("Grant", "Humphries", , "grwhumphries@blackbawks.net", role = c("aut", "cre"),comment = c(ORCID = "0000-0001-5783-9892")),
     person("Bruno", "Caneco", , "bruno@dmpstats.com", role = "aut"),
     person("Aonghais","Cook", , "aonghais.cook@bto.org", role = "aut"),
     person("Elizabeth","Masden", , "elizabeth.masden@uhi.ac.uk", role = "aut"),
     person("Marine Scotland", role = c("fnd", "cph")),
+    person("Black Bawks", role="cph"),
     person("HiDef", role = "cph"),
     person("DMPstats", role = "cph"),
     person("Kelly","Street", role = "rev",comment=c(GITHUB="@kstreet13"))
@@ -50,8 +51,8 @@ Language: en-GB
 LazyData: true
 LazyDataCompression: bzip2
 Roxygen: list(markdown = TRUE)
-URL: https://github.com/HiDef-Aerial-Surveying/stochLAB,
-    https://hidef-aerial-surveying.github.io/stochLAB/
-BugReports: https://github.com/HiDef-Aerial-Surveying/stochLAB/issues
+URL: https://github.com/MarineScotlandScience/stochLAB,
+    https://marinescotlandscience.github.io/stochLAB/
+BugReports: https://github.com/MarineScotlandScience/stochLAB/issues
 RoxygenNote: 7.2.2
 VignetteBuilder: knitr
