@@ -4,12 +4,12 @@
 
 Thanks for considering contributing to stochLAB! The resources in this tool will be used for assessing impacts of offshore turbines on marine birds in order to help balance the trade-offs between conservation and climate change mitigation. 
 
-[repo]: https://github.com/HiDef-Aerial-Surveying/stochLAB
-[issues]: https://github.com/HiDef-Aerial-Surveying/stochLAB/issues
-[new_issue]: https://github.com/HiDef-Aerial-Surveying/stochLAB/issues/new
-[website]: https://hidef-aerial-surveying.github.io/stochLAB
-[citation]: https://hidef-aerial-surveying.github.io/stochLAB/authors.html
-[email]: mailto:grant.humphries@hidefsurveying.co.uk
+[repo]: https://github.com/MarineScotlandScience/stochLAB
+[issues]: https://github.com/MarineScotlandScience/stochLAB/issues
+[new_issue]: https://github.com/MarineScotlandScience/stochLAB/issues/new
+[website]: https://marinescotlandscience.github.io/stochLAB
+[citation]: https://marinescotlandscience.github.io/stochLAB/authors.html
+[email]: mailto:grwhumphries@blackbawks.net
 
 ## Code of conduct
 

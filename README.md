@@ -5,10 +5,10 @@
 
 <!-- badges: start -->
 
-[![test-coverage](https://github.com/HiDef-Aerial-Surveying/stochLAB/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/HiDef-Aerial-Surveying/stochLAB/actions/workflows/test-coverage.yaml)
-[![pkgdown](https://github.com/HiDef-Aerial-Surveying/stochLAB/actions/workflows/pkgdown.yaml/badge.svg)](https://github.com/HiDef-Aerial-Surveying/stochLAB/actions/workflows/pkgdown.yaml)
-[![R-CMD-check](https://github.com/HiDef-Aerial-Surveying/stochLAB/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/HiDef-Aerial-Surveying/stochLAB/actions/workflows/R-CMD-check.yaml)
-[![pkgcheck](https://github.com/HiDef-Aerial-Surveying/stochLAB/actions/workflows/pkgcheck.yaml/badge.svg)](https://github.com/HiDef-Aerial-Surveying/stochLAB/actions/workflows/pkgcheck.yaml)
+[![test-coverage](https://github.com/MarineScotlandScience/stochLAB/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/MarineScotlandScience/stochLAB/actions/workflows/test-coverage.yaml)
+[![pkgdown](https://github.com/MarineScotlandScience/stochLAB/actions/workflows/pkgdown.yaml/badge.svg)](https://github.com/MarineScotlandScience/stochLAB/actions/workflows/pkgdown.yaml)
+[![R-CMD-check](https://github.com/MarineScotlandScience/stochLAB/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/MarineScotlandScience/stochLAB/actions/workflows/R-CMD-check.yaml)
+[![pkgcheck](https://github.com/MarineScotlandScience/stochLAB/actions/workflows/pkgcheck.yaml/badge.svg)](https://github.com/MarineScotlandScience/stochLAB/actions/workflows/pkgcheck.yaml)
 [![Status at rOpenSci Software Peer
 Review](https://badges.ropensci.org/551_status.svg)](https://github.com/ropensci/software-review/issues/551)
 
@@ -67,7 +67,7 @@ You can install the development version with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("HiDef-Aerial-Surveying/stochLAB")
+devtools::install_github("MarineScotlandScience/stochLAB")
 ```
 
 This package depends on the following packages, which should be
@@ -78,7 +78,7 @@ installed automatically:
 ## Bug reports
 
 To report any bugs, please log an
-[ISSUE](https://github.com/HiDef-Aerial-Surveying/stochLAB/issues)
+[ISSUE](https://github.com/MarineScotlandScience/stochLAB/issues)
 
 ## Input parameters
 
@@ -220,39 +220,36 @@ stoch_crm(
 #> 
 #> ── Stochastic CRM ──
 #> 
-#> ℹ Checking inputs✔ Checking inputs [87ms]
-#> ℹ Preparing data✔ Preparing data [152ms]
-#> ℹ Sampling parameters✔ Sampling parameters [423ms]
-#> ⠙ Calculating collisions | 3/1000 iterations⠹ Calculating collisions | 117/1000 iterations⠸ Calculating collisions | 272/1000 iterations⠼ Calculating collisions | 420/1000 iterations⠴ Calculating collisions | 570/1000 iterations⠦ Calculating collisions | 717/1000 iterations⠧ Calculating collisions | 870/1000 iterations⠇ Calculating collisions | 1000/1000 iterations✔ Calculating collisions | 1000/1000 iterations [1.6s]
-#> ℹ Sorting outputs✔ Sorting outputs [761ms]
+#> ℹ Checking inputs✔ Checking inputs [119ms]
+#> ℹ Preparing data✔ Preparing data [225ms]
+#> ℹ Sampling parameters✔ Sampling parameters [374ms]
+#> ⠙ Calculating collisions | 3/1000 iterations⠹ Calculating collisions | 59/1000 iterations⠸ Calculating collisions | 173/1000 iterations⠼ Calculating collisions | 292/1000 iterations⠴ Calculating collisions | 396/1000 iterations⠦ Calculating collisions | 519/1000 iterations⠧ Calculating collisions | 625/1000 iterations⠇ Calculating collisions | 746/1000 iterations⠏ Calculating collisions | 864/1000 iterations⠋ Calculating collisions | 980/1000 iterations✔ Calculating collisions | 1000/1000 iterations [2s]
+#> ℹ Sorting outputs✔ Sorting outputs [701ms]
 #> ✔ Job done!
 #> $collisions
 #> $collisions$opt1
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 a         Jan_Apr  28.0 12.7    28.8     7.15    18.2    36.4     52.0    67.3
-#> 2 b         May_Sep  56.4 25.3    58.1    15.4     37.2    73.5    105.    142. 
-#> 3 c         Oct_Dec  19.3  8.92   19.5     5.13    12.2    25.5     36.6    45.4
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 a         Jan_A…  39.0  17.5   40.4    10.4     25.6    50.6      71.6    94.7
+#> 2 b         May_S…  57.9  26.1   58.7    15.9     39.1    76.0     108.    144. 
+#> 3 c         Oct_D…  22.1  10.2   22.4     5.89    14.0    29.2      41.8    52.0
 #> 
 #> $collisions$opt2
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 a         Jan_Apr 0.728 1.28   0.393   0.0676   0.230   0.655     5.05   11.6 
-#> 2 b         May_Sep 1.47  2.64   0.804   0.135    0.469   1.30     10.8    21.8 
-#> 3 c         Oct_Dec 0.499 0.888  0.274   0.0448   0.158   0.445     3.43    8.06
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 a         Jan_A… 1.02   1.79  0.550   0.0922   0.324   0.910      7.08   16.0 
+#> 2 b         May_S… 1.51   2.61  0.836   0.142    0.480   1.37       9.82   21.2 
+#> 3 c         Oct_D… 0.572  1.02  0.315   0.0515   0.181   0.509      3.91    9.22
 #> 
 #> $collisions$opt3
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 a         Jan_Apr 0.350 0.790 0.143    0.0337  0.0913   0.256     3.05    6.66
-#> 2 b         May_Sep 0.710 1.61  0.294    0.0687  0.185    0.487     5.55   15.2 
-#> 3 c         Oct_Dec 0.240 0.546 0.0995   0.0223  0.0636   0.177     1.93    4.73
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 a         Jan_A… 0.489 1.10   0.199   0.0478  0.127    0.353      4.19    9.11
+#> 2 b         May_S… 0.723 1.59   0.303   0.0672  0.187    0.514      5.87   12.9 
+#> 3 c         Oct_D… 0.275 0.625  0.114   0.0256  0.0730   0.203      2.22    5.40
 #> 
 #> 
 #> $sampled_pars
@@ -308,52 +305,52 @@ stoch_crm(
 #> # A tibble: 12 × 6
 #>    period  mean    sd median pctl_2.5 pctl_97.5
 #>    <chr>  <dbl> <dbl>  <dbl>    <dbl>     <dbl>
-#>  1 Jan    0.849 0.286  0.847    0.315      1.42
-#>  2 Feb    0.833 0.224  0.826    0.415      1.28
-#>  3 Mar    1.12  0.225  1.12     0.665      1.53
-#>  4 Apr    1.11  0.242  1.11     0.647      1.59
-#>  5 May    1.22  0.270  1.21     0.700      1.75
-#>  6 Jun    0.835 0.252  0.838    0.299      1.35
-#>  7 Jul    1.07  0.247  1.07     0.600      1.55
-#>  8 Aug    1.04  0.279  1.05     0.490      1.61
-#>  9 Sep    1.13  0.277  1.13     0.601      1.66
-#> 10 Oct    1.04  0.222  1.04     0.616      1.48
-#> 11 Nov    0.965 0.267  0.959    0.460      1.50
-#> 12 Dec    1.21  0.199  1.21     0.813      1.59
+#>  1 Jan    1.45  0.278  1.44     0.926      2.00
+#>  2 Feb    0.970 0.280  0.961    0.448      1.52
+#>  3 Mar    1.38  0.214  1.38     0.949      1.77
+#>  4 Apr    1.49  0.208  1.50     1.10       1.91
+#>  5 May    1.34  0.224  1.33     0.910      1.78
+#>  6 Jun    1.05  0.272  1.05     0.469      1.60
+#>  7 Jul    1.35  0.291  1.36     0.803      1.93
+#>  8 Aug    0.872 0.291  0.875    0.303      1.47
+#>  9 Sep    0.902 0.211  0.903    0.501      1.31
+#> 10 Oct    1.31  0.225  1.31     0.876      1.75
+#> 11 Nov    1.13  0.295  1.12     0.569      1.72
+#> 12 Dec    1.18  0.239  1.18     0.708      1.64
 #> 
 #> $sampled_pars$prop_oper_mth
 #> # A tibble: 12 × 6
 #>    period  mean     sd median pctl_2.5 pctl_97.5
 #>    <chr>  <dbl>  <dbl>  <dbl>    <dbl>     <dbl>
-#>  1 Jan    0.793 0.0207  0.792    0.752     0.829
-#>  2 Feb    0.769 0.0207  0.769    0.729     0.808
-#>  3 Mar    0.850 0.0204  0.850    0.807     0.890
-#>  4 Apr    0.807 0.0196  0.807    0.769     0.845
-#>  5 May    0.847 0.0195  0.847    0.809     0.884
-#>  6 Jun    0.866 0.0198  0.866    0.827     0.905
-#>  7 Jul    0.869 0.0199  0.869    0.829     0.910
-#>  8 Aug    0.806 0.0194  0.806    0.768     0.844
-#>  9 Sep    0.879 0.0205  0.879    0.838     0.917
-#> 10 Oct    0.820 0.0200  0.820    0.779     0.858
-#> 11 Nov    0.858 0.0201  0.858    0.819     0.898
-#> 12 Dec    0.910 0.0201  0.911    0.872     0.947
+#>  1 Jan    0.802 0.0207  0.802    0.762     0.839
+#>  2 Feb    0.833 0.0207  0.833    0.793     0.871
+#>  3 Mar    0.869 0.0204  0.869    0.827     0.910
+#>  4 Apr    0.862 0.0196  0.861    0.824     0.899
+#>  5 May    0.775 0.0195  0.775    0.737     0.812
+#>  6 Jun    0.888 0.0198  0.888    0.848     0.926
+#>  7 Jul    0.845 0.0199  0.845    0.804     0.885
+#>  8 Aug    0.758 0.0194  0.759    0.721     0.796
+#>  9 Sep    0.860 0.0205  0.860    0.818     0.898
+#> 10 Oct    0.877 0.0200  0.877    0.836     0.915
+#> 11 Nov    0.864 0.0201  0.865    0.826     0.904
+#> 12 Dec    0.834 0.0201  0.835    0.796     0.871
 #> 
 #> $sampled_pars$downtime
 #> # A tibble: 12 × 6
 #>    period  mean    sd median pctl_2.5 pctl_97.5
 #>    <chr>  <dbl> <dbl>  <dbl>    <dbl>     <dbl>
-#>  1 Jan     6.09  2.07   6.12     2.39      10.1
-#>  2 Feb     8.98  2.07   8.99     5.12      12.9
-#>  3 Mar     8.54  2.04   8.54     4.52      12.8
-#>  4 Apr     8.57  1.96   8.61     4.79      12.4
-#>  5 May     7.83  1.95   7.81     4.12      11.7
-#>  6 Jun     7.64  1.98   7.61     3.78      11.6
-#>  7 Jul     9.43  1.99   9.42     5.37      13.5
-#>  8 Aug     6.35  1.94   6.31     2.55      10.1
-#>  9 Sep     7.46  2.05   7.44     3.62      11.6
-#> 10 Oct     6.08  2.00   6.10     2.28      10.1
-#> 11 Nov     7.56  2.01   7.54     3.58      11.4
-#> 12 Dec     7.03  2.01   6.94     3.32      10.8
+#>  1 Jan     7.47  2.07   7.51     3.78      11.5
+#>  2 Feb     9.98  2.07   9.99     6.13      13.9
+#>  3 Mar     9.20  2.04   9.20     5.18      13.5
+#>  4 Apr     9.39  1.96   9.43     5.61      13.2
+#>  5 May     8.28  1.95   8.25     4.57      12.1
+#>  6 Jun     8.44  1.98   8.41     4.58      12.4
+#>  7 Jul     7.00  1.99   6.99     2.95      11.0
+#>  8 Aug     9.22  1.94   9.18     5.41      13.0
+#>  9 Sep     7.53  2.05   7.51     3.68      11.6
+#> 10 Oct     7.11  2.00   7.13     3.31      11.2
+#> 11 Nov     8.92  2.01   8.90     4.94      12.8
+#> 12 Dec     9.60  2.01   9.50     5.89      13.4
 #> 
 #> $sampled_pars$wind_speed
 #> # A tibble: 1 × 5
@@ -405,7 +402,7 @@ stoch_crm(
 #>  8      7 0.0465 0.00166 0.0466   0.0439    0.0490
 #>  9      8 0.0390 0.00216 0.0389   0.0357    0.0432
 #> 10      9 0.0327 0.00250 0.0324   0.0290    0.0386
-#> # … with 490 more rows
+#> # ℹ 490 more rows
 ```
 
 ### Multiscenario example
@@ -509,7 +506,7 @@ trb_pars <- turb_pars_wide_example %>%
   tidyr::nest(pars = c(mean, sd)) %>%
   tidyr::pivot_wider(names_from = feature, values_from = pars) %>%
   dplyr::left_join(., trb_opr_pars)
-#> Joining, by = "TurbineModel"
+#> Joining with `by = join_by(TurbineModel)`
 
 # --- windspeed, rotation speed and blade pitch relationship
 wndspd_rtn_ptch_example
@@ -653,523 +650,469 @@ outputs
 #> $scenario_1
 #> $scenario_1$opt1
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  May_Aug  984.  75.9   982.     847.    933.   1031.    1130.   1241.
-#> 2 feeding   Sep_Dec  552.  41.6   551.     478.    523.    579.     634.    683.
-#> 3 migrating Jan_Apr  626.  47.7   623.     541.    591.    658.     722.    780.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  May_A…  984.  75.9   982.     847.    933.   1031.     1130.   1241.
+#> 2 feeding   Sep_D…  552.  41.6   551.     478.    523.    579.      634.    683.
+#> 3 migrating Jan_A…  626.  47.7   623.     541.    591.    658.      722.    780.
 #> 
 #> $scenario_1$opt2
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  May_Aug  60.7  67.3   41.9     2.41    25.3    65.7     293.    389.
-#> 2 feeding   Sep_Dec  34.0  37.7   23.5     1.35    14.3    37.0     162.    217.
-#> 3 migrating Jan_Apr  38.6  42.8   26.8     1.55    16.2    42.4     186.    249.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  May_A…  60.7  67.3   41.9     2.41    25.3    65.7      293.    389.
+#> 2 feeding   Sep_D…  34.0  37.7   23.5     1.35    14.3    37.0      162.    217.
+#> 3 migrating Jan_A…  38.6  42.8   26.8     1.55    16.2    42.4      186.    249.
 #> 
 #> $scenario_1$opt3
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  May_Aug  17.9  24.8  10.5     0.394    5.92    17.9    106.    151. 
-#> 2 feeding   Sep_Dec  10.1  13.9   5.86    0.221    3.35    10.0     59.0    84.5
-#> 3 migrating Jan_Apr  11.4  15.8   6.77    0.251    3.79    11.5     66.9    93.8
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  May_A…  17.9  24.8  10.5     0.394    5.92    17.9     106.    151. 
+#> 2 feeding   Sep_D…  10.1  13.9   5.86    0.221    3.35    10.0      59.0    84.5
+#> 3 migrating Jan_A…  11.4  15.8   6.77    0.251    3.79    11.5      66.9    93.8
 #> 
 #> 
 #> $scenario_2
 #> $scenario_2$opt1
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  May_Aug 1836. 137.   1831.    1586.   1743.   1921.    2098.   2301.
-#> 2 feeding   Sep_Dec 1045.  76.4  1044.     909.    991.   1096.    1195.   1288.
-#> 3 migrating Jan_Apr 1181.  87.6  1177.    1025.   1118.   1241.    1356.   1463.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  May_A… 1836. 137.   1831.    1586.   1743.   1921.     2098.   2301.
+#> 2 feeding   Sep_D… 1045.  76.4  1044.     909.    991.   1096.     1195.   1288.
+#> 3 migrating Jan_A… 1181.  87.6  1177.    1025.   1118.   1241.     1356.   1463.
 #> 
 #> $scenario_2$opt2
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  May_Aug 122.  132.    85.2     5.20    52.1   133.      574.    759.
-#> 2 feeding   Sep_Dec  69.2  75.0   48.4     2.95    29.9    75.9     323.    430.
-#> 3 migrating Jan_Apr  78.3  84.8   55.1     3.37    33.7    86.5     369.    491.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  May_A… 122.  132.    85.2     5.20    52.1   133.       574.    759.
+#> 2 feeding   Sep_D…  69.2  75.0   48.4     2.95    29.9    75.9      323.    430.
+#> 3 migrating Jan_A…  78.3  84.8   55.1     3.37    33.7    86.5      369.    491.
 #> 
 #> $scenario_2$opt3
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  May_Aug  35.9  48.7   21.4    0.848   12.2     36.1     208.    294.
-#> 2 feeding   Sep_Dec  20.4  27.7   12.1    0.482    7.00    20.6     118.    167.
-#> 3 migrating Jan_Apr  23.1  31.3   13.9    0.547    7.91    23.5     133.    185.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  May_A…  35.9  48.7   21.4    0.848   12.2     36.1      208.    294.
+#> 2 feeding   Sep_D…  20.4  27.7   12.1    0.482    7.00    20.6      118.    167.
+#> 3 migrating Jan_A…  23.1  31.3   13.9    0.547    7.91    23.5      133.    185.
 #> 
 #> 
 #> $scenario_3
 #> $scenario_3$opt1
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  May_Aug 2131. 143.   2126.    1875.   2034.   2223.    2415.   2690.
-#> 2 feeding   Sep_Dec 1149.  76.8  1143.    1011.   1095.   1197.    1302.   1446.
-#> 3 migrating Jan_Apr 1300.  89.6  1292.    1131.   1239.   1357.    1491.   1638.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  May_A… 2131. 143.   2126.    1875.   2034.   2223.     2415.   2690.
+#> 2 feeding   Sep_D… 1149.  76.8  1143.    1011.   1095.   1197.     1302.   1446.
+#> 3 migrating Jan_A… 1300.  89.6  1292.    1131.   1239.   1357.     1491.   1638.
 #> 
 #> $scenario_3$opt2
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  May_Aug  53.7  77.6   30.1    0.894   17.0     53.9     347.    477.
-#> 2 feeding   Sep_Dec  28.9  41.8   16.1    0.496    9.16    29.0     185.    257.
-#> 3 migrating Jan_Apr  32.7  47.1   18.3    0.546   10.3     32.5     205.    291.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  May_A…  53.7  77.6   30.1    0.894   17.0     53.9      347.    477.
+#> 2 feeding   Sep_D…  28.9  41.8   16.1    0.496    9.16    29.0      185.    257.
+#> 3 migrating Jan_A…  32.7  47.1   18.3    0.546   10.3     32.5      205.    291.
 #> 
 #> $scenario_3$opt3
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  May_Aug 14.4   25.7   6.47   0.124     3.37   12.7     109.    162. 
-#> 2 feeding   Sep_Dec  7.74  13.8   3.48   0.0685    1.81    6.84     59.8    86.3
-#> 3 migrating Jan_Apr  8.74  15.6   3.93   0.0756    2.05    7.65     66.9    96.0
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  May_A… 14.4   25.7   6.47   0.124     3.37   12.7      109.    162. 
+#> 2 feeding   Sep_D…  7.74  13.8   3.48   0.0685    1.81    6.84      59.8    86.3
+#> 3 migrating Jan_A…  8.74  15.6   3.93   0.0756    2.05    7.65      66.9    96.0
 #> 
 #> 
 #> $scenario_4
 #> $scenario_4$opt1
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  May_Aug 3720.  240.  3713.    3290.   3560.   3872.    4188.   4654.
-#> 2 feeding   Sep_Dec 2037.  131.  2025.    1801.   1944.   2122.    2297.   2540.
-#> 3 migrating Jan_Apr 2297.  152.  2284.    2012.   2193.   2393.    2626.   2854.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  May_A… 3720.  240.  3713.    3290.   3560.   3872.     4188.   4654.
+#> 2 feeding   Sep_D… 2037.  131.  2025.    1801.   1944.   2122.     2297.   2540.
+#> 3 migrating Jan_A… 2297.  152.  2284.    2012.   2193.   2393.     2626.   2854.
 #> 
 #> $scenario_4$opt2
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  May_Aug 100.  142.    57.0     1.79    32.6   101.      633.    867.
-#> 2 feeding   Sep_Dec  54.8  77.7   31.0     1.01    17.8    55.5     342.    474.
-#> 3 migrating Jan_Apr  61.7  87.3   35.1     1.11    20.1    62.2     382.    531.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  May_A… 100.  142.    57.0     1.79    32.6   101.       633.    867.
+#> 2 feeding   Sep_D…  54.8  77.7   31.0     1.01    17.8    55.5      342.    474.
+#> 3 migrating Jan_A…  61.7  87.3   35.1     1.11    20.1    62.2      382.    531.
 #> 
 #> $scenario_4$opt3
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  May_Aug  26.8  47.1  12.3     0.249    6.47    23.9     199.    295.
-#> 2 feeding   Sep_Dec  14.7  25.7   6.69    0.140    3.53    13.1     111.    160.
-#> 3 migrating Jan_Apr  16.5  28.9   7.57    0.153    3.98    14.7     124.    177.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  May_A…  26.8  47.1  12.3     0.249    6.47    23.9      199.    295.
+#> 2 feeding   Sep_D…  14.7  25.7   6.69    0.140    3.53    13.1      111.    160.
+#> 3 migrating Jan_A…  16.5  28.9   7.57    0.153    3.98    14.7      124.    177.
 #> 
 #> 
 #> $scenario_5
 #> $scenario_5$opt1
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  May_Aug 1176.  341.  1053.     825.    985.   1219.    2220.   2634.
-#> 2 feeding   Sep_Dec  615.  176.   551.     430.    516.    640.    1136.   1338.
-#> 3 migrating Jan_Apr  703.  202.   630.     489.    591.    731.    1323.   1551.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  May_A… 1176.  341.  1053.     825.    985.   1219.     2220.   2634.
+#> 2 feeding   Sep_D…  615.  176.   551.     430.    516.    640.     1136.   1338.
+#> 3 migrating Jan_A…  703.  202.   630.     489.    591.    731.     1323.   1551.
 #> 
 #> $scenario_5$opt2
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  May_Aug 0.837  2.75 0.131  0.000231  0.0341   0.390     8.68    31.9
-#> 2 feeding   Sep_Dec 0.438  1.45 0.0687 0.000118  0.0180   0.202     4.66    17.0
-#> 3 migrating Jan_Apr 0.500  1.63 0.0782 0.000136  0.0209   0.230     5.20    18.4
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  May_A… 0.837  2.75 0.131  0.000231  0.0341   0.390      8.68    31.9
+#> 2 feeding   Sep_D… 0.438  1.45 0.0687 0.000118  0.0180   0.202      4.66    17.0
+#> 3 migrating Jan_A… 0.500  1.63 0.0782 0.000136  0.0209   0.230      5.20    18.4
 #> 
 #> $scenario_5$opt3
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median  pctl_2.5 pctl_25 pctl_75 pctl_…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>     <dbl>   <dbl>   <dbl>   <dbl>   <dbl>
-#> 1 breeding  May_Aug 0.221 0.795 0.0245 0.0000261 0.00602  0.0786    2.41    8.88
-#> 2 feeding   Sep_Dec 0.116 0.418 0.0129 0.0000129 0.00319  0.0408    1.29    4.73
-#> 3 migrating Jan_Apr 0.132 0.472 0.0147 0.0000151 0.00365  0.0462    1.44    5.12
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  May_A… 0.221 0.795 0.0245  2.61e-5 0.00602  0.0786      2.41    8.88
+#> 2 feeding   Sep_D… 0.116 0.418 0.0129  1.29e-5 0.00319  0.0408      1.29    4.73
+#> 3 migrating Jan_A… 0.132 0.472 0.0147  1.51e-5 0.00365  0.0462      1.44    5.12
 #> 
 #> 
 #> $scenario_6
 #> $scenario_6$opt1
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  May_Aug 2164.  568.  1961.    1557.   1840.   2263.    3874.   4500.
-#> 2 feeding   Sep_Dec 1148.  298.  1043.     822.    977.   1210.    2021.   2323.
-#> 3 migrating Jan_Apr 1310.  341.  1188.     934.   1117.   1370.    2325.   2688.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  May_A… 2164.  568.  1961.    1557.   1840.   2263.     3874.   4500.
+#> 2 feeding   Sep_D… 1148.  298.  1043.     822.    977.   1210.     2021.   2323.
+#> 3 migrating Jan_A… 1310.  341.  1188.     934.   1117.   1370.     2325.   2688.
 #> 
 #> $scenario_6$opt2
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  May_Aug 1.64   5.28  0.266 0.000499  0.0711   0.779    17.1     59.5
-#> 2 feeding   Sep_Dec 0.872  2.82  0.142 0.000254  0.0379   0.415     9.33    32.2
-#> 3 migrating Jan_Apr 0.991  3.18  0.162 0.000295  0.0437   0.472    10.4     34.7
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  May_A… 1.64   5.28  0.266 0.000499  0.0711   0.779     17.1     59.5
+#> 2 feeding   Sep_D… 0.872  2.82  0.142 0.000254  0.0379   0.415      9.33    32.2
+#> 3 migrating Jan_A… 0.991  3.18  0.162 0.000295  0.0437   0.472     10.4     34.7
 #> 
 #> $scenario_6$opt3
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median  pctl_2.5 pctl_25 pctl_75 pctl_…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>     <dbl>   <dbl>   <dbl>   <dbl>   <dbl>
-#> 1 breeding  May_Aug 0.433 1.53  0.0503 0.0000579 0.0126   0.157     4.77   16.6 
-#> 2 feeding   Sep_Dec 0.230 0.817 0.0271 0.0000291 0.00672  0.0832    2.59    8.97
-#> 3 migrating Jan_Apr 0.261 0.921 0.0304 0.0000337 0.00768  0.0947    2.88    9.68
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  May_A… 0.433 1.53  0.0503  5.79e-5 0.0126   0.157       4.77   16.6 
+#> 2 feeding   Sep_D… 0.230 0.817 0.0271  2.91e-5 0.00672  0.0832      2.59    8.97
+#> 3 migrating Jan_A… 0.261 0.921 0.0304  3.37e-5 0.00768  0.0947      2.88    9.68
 #> 
 #> 
 #> $scenario_7
 #> $scenario_7$opt1
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Jan_Apr  429.  93.1   423.     270.    360.    490.     626.    767.
-#> 2 feeding   May_Sep  697. 151.    685.     442.    588.    791.    1006.   1252.
-#> 3 migrating Oct_Dec  266.  59.2   262.     164.    223.    303.     390.    498.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Jan_A…  429.  93.1   423.     270.    360.    490.      626.    767.
+#> 2 feeding   May_S…  697. 151.    685.     442.    588.    791.     1006.   1252.
+#> 3 migrating Oct_D…  266.  59.2   262.     164.    223.    303.      390.    498.
 #> 
 #> $scenario_7$opt2
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Jan_Apr  257. 150.    223.     62.9   153.     320.     603.   1071.
-#> 2 feeding   May_Sep  417. 244.    366.    100.    251.     517.     985.   1797.
-#> 3 migrating Oct_Dec  159.  93.0   137.     37.8    94.0    199.     377.    649.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Jan_A…  257. 150.    223.     62.9   153.     320.      603.   1071.
+#> 2 feeding   May_S…  417. 244.    366.    100.    251.     517.      985.   1797.
+#> 3 migrating Oct_D…  159.  93.0   137.     37.8    94.0    199.      377.    649.
 #> 
 #> $scenario_7$opt3
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Jan_Apr  28.2  25.9   20.9     4.02   12.5     34.1     86.4    239.
-#> 2 feeding   May_Sep  45.9  42.4   34.3     6.51   20.3     55.1    145.     409.
-#> 3 migrating Oct_Dec  17.5  16.0   12.8     2.48    7.78    21.8     54.6    144.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Jan_A…  28.2  25.9   20.9     4.02   12.5     34.1      86.4    239.
+#> 2 feeding   May_S…  45.9  42.4   34.3     6.51   20.3     55.1     145.     409.
+#> 3 migrating Oct_D…  17.5  16.0   12.8     2.48    7.78    21.8      54.6    144.
 #> 
 #> 
 #> $scenario_8
 #> $scenario_8$opt1
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Jan_Apr  855.  186.   844.     539.    719.    977.    1248.   1531.
-#> 2 feeding   May_Sep 1376.  299.  1352.     872.   1160.   1560.    1985.   2472.
-#> 3 migrating Oct_Dec  534.  119.   526.     329.    448.    608.     782.    999.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Jan_A…  855.  186.   844.     539.    719.    977.     1248.   1531.
+#> 2 feeding   May_S… 1376.  299.  1352.     872.   1160.   1560.     1985.   2472.
+#> 3 migrating Oct_D…  534.  119.   526.     329.    448.    608.      782.    999.
 #> 
 #> $scenario_8$opt2
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Jan_Apr  536.  307.   468.    135.     324.    668.    1246.   2183.
-#> 2 feeding   May_Sep  862.  494.   760.    213.     524.   1067.    2013.   3624.
-#> 3 migrating Oct_Dec  334.  192.   290.     81.5    200.    418.     783.   1330.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Jan_A…  536.  307.   468.    135.     324.    668.     1246.   2183.
+#> 2 feeding   May_S…  862.  494.   760.    213.     524.   1067.     2013.   3624.
+#> 3 migrating Oct_D…  334.  192.   290.     81.5    200.    418.      783.   1330.
 #> 
 #> $scenario_8$opt3
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Jan_Apr  58.6  52.8   43.8     8.62    26.4    71.2     178.    485.
-#> 2 feeding   May_Sep  94.4  85.7   71.2    14.0     42.5   114.      295.    820.
-#> 3 migrating Oct_Dec  36.6  32.8   27.1     5.36    16.5    45.6     113.    293.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Jan_A…  58.6  52.8   43.8     8.62    26.4    71.2      178.    485.
+#> 2 feeding   May_S…  94.4  85.7   71.2    14.0     42.5   114.       295.    820.
+#> 3 migrating Oct_D…  36.6  32.8   27.1     5.36    16.5    45.6      113.    293.
 #> 
 #> 
 #> $scenario_9
 #> $scenario_9$opt1
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Jan_Apr  571. 123.    563.     360.    484.    643.     818.   1015.
-#> 2 feeding   May_Sep  965. 210.    953.     615.    815.   1089.    1428.   1738.
-#> 3 migrating Oct_Dec  354.  78.1   349.     223.    299.    401.     511.    646.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Jan_A…  571. 123.    563.     360.    484.    643.      818.   1015.
+#> 2 feeding   May_S…  965. 210.    953.     615.    815.   1089.     1428.   1738.
+#> 3 migrating Oct_D…  354.  78.1   349.     223.    299.    401.      511.    646.
 #> 
 #> $scenario_9$opt2
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Jan_Apr  194. 140.   157.      32.9   100.     245.     539.   1050.
-#> 2 feeding   May_Sep  329. 238.   265.      55.1   169.     414.     905.   1788.
-#> 3 migrating Oct_Dec  121.  87.9   97.6     20.1    62.0    153.     332.    682.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Jan_A…  194. 140.   157.      32.9   100.     245.      539.   1050.
+#> 2 feeding   May_S…  329. 238.   265.      55.1   169.     414.      905.   1788.
+#> 3 migrating Oct_D…  121.  87.9   97.6     20.1    62.0    153.      332.    682.
 #> 
 #> $scenario_9$opt3
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Jan_Apr  23.0  25.6  15.7      2.36    8.83    27.4     79.6    265.
-#> 2 feeding   May_Sep  38.9  43.5  26.3      3.96   15.0     47.4    137.     472.
-#> 3 migrating Oct_Dec  14.3  16.2   9.75     1.46    5.51    17.2     48.9    183.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Jan_A…  23.0  25.6  15.7      2.36    8.83    27.4      79.6    265.
+#> 2 feeding   May_S…  38.9  43.5  26.3      3.96   15.0     47.4     137.     472.
+#> 3 migrating Oct_D…  14.3  16.2   9.75     1.46    5.51    17.2      48.9    183.
 #> 
 #> 
 #> $scenario_10
 #> $scenario_10$opt1
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Jan_Apr 1136.  245.  1120.     717.    963.   1279.    1628.   2019.
-#> 2 feeding   May_Sep 1901.  413.  1875.    1212.   1605.   2145.    2811.   3422.
-#> 3 migrating Oct_Dec  709.  156.   698.     446.    598.    802.    1024.   1294.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Jan_A… 1136.  245.  1120.     717.    963.   1279.     1628.   2019.
+#> 2 feeding   May_S… 1901.  413.  1875.    1212.   1605.   2145.     2811.   3422.
+#> 3 migrating Oct_D…  709.  156.   698.     446.    598.    802.     1024.   1294.
 #> 
 #> $scenario_10$opt2
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Jan_Apr  404.  286.   328.     70.2    211.    509.    1101.   2131.
-#> 2 feeding   May_Sep  676.  481.   547.    116.     351.    852.    1833.   3592.
-#> 3 migrating Oct_Dec  252.  181.   205.     43.2    131.    320.     686.   1393.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Jan_A…  404.  286.   328.     70.2    211.    509.     1101.   2131.
+#> 2 feeding   May_S…  676.  481.   547.    116.     351.    852.     1833.   3592.
+#> 3 migrating Oct_D…  252.  181.   205.     43.2    131.    320.      686.   1393.
 #> 
 #> $scenario_10$opt3
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Jan_Apr  47.6  52.0   32.8     5.05    18.6    56.9     164.    535.
-#> 2 feeding   May_Sep  79.8  87.6   54.3     8.36    31.2    95.8     279.    944.
-#> 3 migrating Oct_Dec  29.8  33.2   20.5     3.15    11.7    35.6     101.    373.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Jan_A…  47.6  52.0   32.8     5.05    18.6    56.9      164.    535.
+#> 2 feeding   May_S…  79.8  87.6   54.3     8.36    31.2    95.8      279.    944.
+#> 3 migrating Oct_D…  29.8  33.2   20.5     3.15    11.7    35.6      101.    373.
 #> 
 #> 
 #> $scenario_11
 #> $scenario_11$opt1
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Jan_Apr  570. 121.    558.     366.    484.    647.     826.    979.
-#> 2 feeding   May_Sep  981. 211.    957.     624.    830.   1115.    1431.   1682.
-#> 3 migrating Oct_Dec  347.  76.0   344.     221.    293.    395.     515.    606.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Jan_A…  570. 121.    558.     366.    484.    647.      826.    979.
+#> 2 feeding   May_S…  981. 211.    957.     624.    830.   1115.     1431.   1682.
+#> 3 migrating Oct_D…  347.  76.0   344.     221.    293.    395.      515.    606.
 #> 
 #> $scenario_11$opt2
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Jan_Apr  24.7  40.3  11.5     0.787    4.98    29.1    111.     440.
-#> 2 feeding   May_Sep  42.5  69.2  19.8     1.35     8.56    48.3    189.     768.
-#> 3 migrating Oct_Dec  15.0  24.2   7.02    0.486    3.02    17.4     67.2    263.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Jan_A…  24.7  40.3  11.5     0.787    4.98    29.1     111.     440.
+#> 2 feeding   May_S…  42.5  69.2  19.8     1.35     8.56    48.3     189.     768.
+#> 3 migrating Oct_D…  15.0  24.2   7.02    0.486    3.02    17.4      67.2    263.
 #> 
 #> $scenario_11$opt3
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Jan_Apr  3.52 11.1   0.933   0.0455   0.337    2.66     21.6   133. 
-#> 2 feeding   May_Sep  6.04 19.0   1.57    0.0814   0.584    4.48     36.6   233. 
-#> 3 migrating Oct_Dec  2.13  6.60  0.568   0.0283   0.207    1.57     13.3    75.9
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Jan_A…  3.52 11.1   0.933   0.0455   0.337    2.66      21.6   133. 
+#> 2 feeding   May_S…  6.04 19.0   1.57    0.0814   0.584    4.48      36.6   233. 
+#> 3 migrating Oct_D…  2.13  6.60  0.568   0.0283   0.207    1.57      13.3    75.9
 #> 
 #> 
 #> $scenario_12
 #> $scenario_12$opt1
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Jan_Apr 1135.  241.  1111.     728.    964.   1287.    1645.   1949.
-#> 2 feeding   May_Sep 1932.  415.  1885.    1229.   1635.   2197.    2819.   3315.
-#> 3 migrating Oct_Dec  696.  152.   689.     442.    587.    791.    1032.   1212.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Jan_A… 1135.  241.  1111.     728.    964.   1287.     1645.   1949.
+#> 2 feeding   May_S… 1932.  415.  1885.    1229.   1635.   2197.     2819.   3315.
+#> 3 migrating Oct_D…  696.  152.   689.     442.    587.    791.     1032.   1212.
 #> 
 #> $scenario_12$opt2
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Jan_Apr  50.9  81.9   24.0     1.68   10.5     60.3     229.    887.
-#> 2 feeding   May_Sep  86.6 139.    41.0     2.85   17.8     99.1     384.   1534.
-#> 3 migrating Oct_Dec  31.2  49.5   14.8     1.04    6.37    36.3     139.    535.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Jan_A…  50.9  81.9   24.0     1.68   10.5     60.3      229.    887.
+#> 2 feeding   May_S…  86.6 139.    41.0     2.85   17.8     99.1      384.   1534.
+#> 3 migrating Oct_D…  31.2  49.5   14.8     1.04    6.37    36.3      139.    535.
 #> 
 #> $scenario_12$opt3
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Jan_Apr  7.17  22.2   1.95   0.0973   0.707    5.54     43.2    268.
-#> 2 feeding   May_Sep 12.2   37.7   3.25   0.172    1.22     9.21     73.2    464.
-#> 3 migrating Oct_Dec  4.38  13.4   1.19   0.0606   0.439    3.28     27.1    154.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Jan_A…  7.17  22.2   1.95   0.0973   0.707    5.54      43.2    268.
+#> 2 feeding   May_S… 12.2   37.7   3.25   0.172    1.22     9.21      73.2    464.
+#> 3 migrating Oct_D…  4.38  13.4   1.19   0.0606   0.439    3.28      27.1    154.
 #> 
 #> 
 #> $scenario_13
 #> $scenario_13$opt1
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Dec_Feb  21.5  4.95   21.0     13.1    18.0    24.4     32.0    39.7
-#> 2 feeding   Mar_Aug  60.9 13.9    59.8     37.2    50.8    69.7     91.1   112. 
-#> 3 migrating Sep_Nov  24.4  5.70   24.0     14.9    20.3    27.8     37.0    45.4
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Dec_F…  21.5  4.95   21.0     13.1    18.0    24.4      32.0    39.7
+#> 2 feeding   Mar_A…  60.9 13.9    59.8     37.2    50.8    69.7      91.1   112. 
+#> 3 migrating Sep_N…  24.4  5.70   24.0     14.9    20.3    27.8      37.0    45.4
 #> 
 #> $scenario_13$opt2
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Dec_Feb  21.6  4.72   21.3     13.2    18.4    24.6     31.5    36.8
-#> 2 feeding   Mar_Aug  61.3 13.3    60.9     37.6    52.2    69.8     89.0   106. 
-#> 3 migrating Sep_Nov  24.6  5.48   24.3     14.8    20.9    27.9     36.1    42.8
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Dec_F…  21.6  4.72   21.3     13.2    18.4    24.6      31.5    36.8
+#> 2 feeding   Mar_A…  61.3 13.3    60.9     37.6    52.2    69.8      89.0   106. 
+#> 3 migrating Sep_N…  24.6  5.48   24.3     14.8    20.9    27.9      36.1    42.8
 #> 
 #> $scenario_13$opt3
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Dec_Feb  18.6  3.99   18.7     11.4    15.9    21.1     27.2    35.6
-#> 2 feeding   Mar_Aug  52.9 11.3    52.9     32.7    45.1    59.8     77.3   100. 
-#> 3 migrating Sep_Nov  21.2  4.68   21.1     13.1    18.0    24.0     31.4    41.3
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Dec_F…  18.6  3.99   18.7     11.4    15.9    21.1      27.2    35.6
+#> 2 feeding   Mar_A…  52.9 11.3    52.9     32.7    45.1    59.8      77.3   100. 
+#> 3 migrating Sep_N…  21.2  4.68   21.1     13.1    18.0    24.0      31.4    41.3
 #> 
 #> 
 #> $scenario_14
 #> $scenario_14$opt1
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Dec_Feb  43.5  10.0   42.6     26.6    36.5    49.5     64.8    80.5
-#> 2 feeding   Mar_Aug 121.   27.6  119.      73.7   101.    138.     181.    223. 
-#> 3 migrating Sep_Nov  49.0  11.4   48.1     30.0    40.8    55.7     74.3    91.2
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Dec_F…  43.5  10.0   42.6     26.6    36.5    49.5      64.8    80.5
+#> 2 feeding   Mar_A… 121.   27.6  119.      73.7   101.    138.      181.    223. 
+#> 3 migrating Sep_N…  49.0  11.4   48.1     30.0    40.8    55.7      74.3    91.2
 #> 
 #> $scenario_14$opt2
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Dec_Feb  46.0  9.96   45.4     28.2    39.2    52.4     66.7    78.3
-#> 2 feeding   Mar_Aug 128.  27.6   127.      78.7   109.    145.     185.    219. 
-#> 3 migrating Sep_Nov  51.8 11.5    51.3     31.3    44.2    58.8     75.8    89.4
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Dec_F…  46.0  9.96   45.4     28.2    39.2    52.4      66.7    78.3
+#> 2 feeding   Mar_A… 128.  27.6   127.      78.7   109.    145.      185.    219. 
+#> 3 migrating Sep_N…  51.8 11.5    51.3     31.3    44.2    58.8      75.8    89.4
 #> 
 #> $scenario_14$opt3
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Dec_Feb  39.6  8.40   39.7     24.3    33.9    45.0     57.7    75.1
-#> 2 feeding   Mar_Aug 110.  23.3   110.      68.7    94.2   125.     160.    206. 
-#> 3 migrating Sep_Nov  44.7  9.76   44.6     27.7    38.1    50.5     65.7    85.9
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Dec_F…  39.6  8.40   39.7     24.3    33.9    45.0      57.7    75.1
+#> 2 feeding   Mar_A… 110.  23.3   110.      68.7    94.2   125.      160.    206. 
+#> 3 migrating Sep_N…  44.7  9.76   44.6     27.7    38.1    50.5      65.7    85.9
 #> 
 #> 
 #> $scenario_15
 #> $scenario_15$opt1
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Dec_Feb  30.8  6.55   30.3     20.0    26.2    34.7     45.5    53.8
-#> 2 feeding   Mar_Aug  88.3 18.8    86.9     57.3    75.0    99.5    130.    157. 
-#> 3 migrating Sep_Nov  34.5  7.50   33.9     22.1    29.1    38.9     51.6    60.5
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Dec_F…  30.8  6.55   30.3     20.0    26.2    34.7      45.5    53.8
+#> 2 feeding   Mar_A…  88.3 18.8    86.9     57.3    75.0    99.5     130.    157. 
+#> 3 migrating Sep_N…  34.5  7.50   33.9     22.1    29.1    38.9      51.6    60.5
 #> 
 #> $scenario_15$opt2
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Dec_Feb  16.7  3.64   16.5     10.1    14.0    19.1     23.8    29.4
-#> 2 feeding   Mar_Aug  47.8 10.4    47.6     29.1    40.2    54.7     68.6    83.1
-#> 3 migrating Sep_Nov  18.6  4.16   18.6     11.2    15.7    21.3     27.0    33.1
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Dec_F…  16.7  3.64   16.5     10.1    14.0    19.1      23.8    29.4
+#> 2 feeding   Mar_A…  47.8 10.4    47.6     29.1    40.2    54.7      68.6    83.1
+#> 3 migrating Sep_N…  18.6  4.16   18.6     11.2    15.7    21.3      27.0    33.1
 #> 
 #> $scenario_15$opt3
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Dec_Feb  15.4  3.59   15.4     9.16    12.9    17.5     22.1    31.7
-#> 2 feeding   Mar_Aug  44.1 10.3    44.1    26.2     37.0    50.2     62.9    91.6
-#> 3 migrating Sep_Nov  17.2  4.09   17.3    10.2     14.5    19.5     25.1    37.2
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Dec_F…  15.4  3.59   15.4     9.16    12.9    17.5      22.1    31.7
+#> 2 feeding   Mar_A…  44.1 10.3    44.1    26.2     37.0    50.2      62.9    91.6
+#> 3 migrating Sep_N…  17.2  4.09   17.3    10.2     14.5    19.5      25.1    37.2
 #> 
 #> 
 #> $scenario_16
 #> $scenario_16$opt1
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Dec_Feb  62.3  13.3   61.3     40.4    53.0    70.3     92.2    109.
-#> 2 feeding   Mar_Aug 175.   37.3  172.     114.    149.    197.     258.     311.
-#> 3 migrating Sep_Nov  69.1  15.0   68.0     44.2    58.3    78.1    104.     121.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Dec_F…  62.3  13.3   61.3     40.4    53.0    70.3      92.2    109.
+#> 2 feeding   Mar_A… 175.   37.3  172.     114.    149.    197.      258.     311.
+#> 3 migrating Sep_N…  69.1  15.0   68.0     44.2    58.3    78.1     104.     121.
 #> 
 #> $scenario_16$opt2
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Dec_Feb  35.4  7.67   35.0     21.5    29.9    40.6     50.5    62.3
-#> 2 feeding   Mar_Aug  99.4 21.5    98.9     60.8    83.8   114.     143.    173. 
-#> 3 migrating Sep_Nov  39.2  8.67   39.1     23.6    33.1    44.8     56.8    69.4
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Dec_F…  35.4  7.67   35.0     21.5    29.9    40.6      50.5    62.3
+#> 2 feeding   Mar_A…  99.4 21.5    98.9     60.8    83.8   114.      143.    173. 
+#> 3 migrating Sep_N…  39.2  8.67   39.1     23.6    33.1    44.8      56.8    69.4
 #> 
 #> $scenario_16$opt3
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Dec_Feb  32.7  7.54   32.7     19.6    27.6    37.1     46.9    66.3
-#> 2 feeding   Mar_Aug  91.9 21.1    91.8     54.9    77.1   104.     131.    188. 
-#> 3 migrating Sep_Nov  36.3  8.51   36.3     21.5    30.6    40.9     52.7    77.3
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Dec_F…  32.7  7.54   32.7     19.6    27.6    37.1      46.9    66.3
+#> 2 feeding   Mar_A…  91.9 21.1    91.8     54.9    77.1   104.      131.    188. 
+#> 3 migrating Sep_N…  36.3  8.51   36.3     21.5    30.6    40.9      52.7    77.3
 #> 
 #> 
 #> $scenario_17
 #> $scenario_17$opt1
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Dec_Feb  27.1  6.46   26.8     16.4    22.5    31.3     40.4    51.6
-#> 2 feeding   Mar_Aug  81.3 19.3    80.0     49.3    67.2    93.3    122.    157. 
-#> 3 migrating Sep_Nov  31.0  7.53   30.4     18.5    25.4    35.7     47.4    58.1
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Dec_F…  27.1  6.46   26.8     16.4    22.5    31.3      40.4    51.6
+#> 2 feeding   Mar_A…  81.3 19.3    80.0     49.3    67.2    93.3     122.    157. 
+#> 3 migrating Sep_N…  31.0  7.53   30.4     18.5    25.4    35.7      47.4    58.1
 #> 
 #> $scenario_17$opt2
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Dec_Feb  1.10 0.470   1.04    0.417   0.761    1.34     2.18    3.68
-#> 2 feeding   Mar_Aug  3.28 1.40    3.12    1.24    2.27     4.02     6.51   11.0 
-#> 3 migrating Sep_Nov  1.25 0.541   1.19    0.471   0.869    1.54     2.51    4.42
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Dec_F…  1.10 0.470   1.04    0.417   0.761    1.34      2.18    3.68
+#> 2 feeding   Mar_A…  3.28 1.40    3.12    1.24    2.27     4.02      6.51   11.0 
+#> 3 migrating Sep_N…  1.25 0.541   1.19    0.471   0.869    1.54      2.51    4.42
 #> 
 #> $scenario_17$opt3
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Dec_Feb 0.774 0.408  0.725    0.283   0.520   0.957     1.56    4.85
-#> 2 feeding   Mar_Aug 2.32  1.21   2.18     0.855   1.56    2.88      4.64   14.1 
-#> 3 migrating Sep_Nov 0.884 0.467  0.840    0.333   0.593   1.10      1.78    5.34
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Dec_F… 0.774 0.408  0.725    0.283   0.520   0.957      1.56    4.85
+#> 2 feeding   Mar_A… 2.32  1.21   2.18     0.855   1.56    2.88       4.64   14.1 
+#> 3 migrating Sep_N… 0.884 0.467  0.840    0.333   0.593   1.10       1.78    5.34
 #> 
 #> 
 #> $scenario_18
 #> $scenario_18$opt1
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Dec_Feb  54.9  13.1   54.2     33.2    45.5    63.3     81.7    104.
-#> 2 feeding   Mar_Aug 161.   38.2  159.      97.8   133.    185.     242.     310.
-#> 3 migrating Sep_Nov  62.2  15.1   61.0     37.2    51.0    71.7     95.0    117.
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Dec_F…  54.9  13.1   54.2     33.2    45.5    63.3      81.7    104.
+#> 2 feeding   Mar_A… 161.   38.2  159.      97.8   133.    185.      242.     310.
+#> 3 migrating Sep_N…  62.2  15.1   61.0     37.2    51.0    71.7      95.0    117.
 #> 
 #> $scenario_18$opt2
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Dec_Feb  2.33 0.992   2.22    0.889    1.62    2.84     4.63    7.73
-#> 2 feeding   Mar_Aug  6.84 2.90    6.50    2.61     4.73    8.38    13.6    22.7 
-#> 3 migrating Sep_Nov  2.64 1.13    2.52    0.998    1.83    3.24     5.29    9.20
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Dec_F…  2.33 0.992   2.22    0.889    1.62    2.84      4.63    7.73
+#> 2 feeding   Mar_A…  6.84 2.90    6.50    2.61     4.73    8.38     13.6    22.7 
+#> 3 migrating Sep_N…  2.64 1.13    2.52    0.998    1.83    3.24      5.29    9.20
 #> 
 #> $scenario_18$opt3
 #> # A tibble: 3 × 10
-#>   season_id period   mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_9…¹ pctl_99
-#>   <chr>     <chr>   <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>
-#> 1 breeding  Dec_Feb  1.65 0.855   1.54    0.606    1.11    2.03     3.31    10.1
-#> 2 feeding   Mar_Aug  4.83 2.49    4.55    1.79     3.26    6.00     9.54    28.7
-#> 3 migrating Sep_Nov  1.86 0.969   1.77    0.707    1.25    2.31     3.68    11.0
-#> # … with abbreviated variable name ¹​pctl_97.5
+#>   season_id period  mean    sd median pctl_2.5 pctl_25 pctl_75 pctl_97.5 pctl_99
+#>   <chr>     <chr>  <dbl> <dbl>  <dbl>    <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
+#> 1 breeding  Dec_F…  1.65 0.855   1.54    0.606    1.11    2.03      3.31    10.1
+#> 2 feeding   Mar_A…  4.83 2.49    4.55    1.79     3.26    6.00      9.54    28.7
+#> 3 migrating Sep_N…  1.86 0.969   1.77    0.707    1.25    2.31      3.68    11.0
 ```
 
 ### Band model example

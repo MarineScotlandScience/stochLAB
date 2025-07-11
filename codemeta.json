@@ -4,7 +4,7 @@
   "identifier": "stochLAB",
   "description": "Tool for running Collision Risk Models for seabirds on offshore wind farms.",
   "name": "stochLAB: Stochastic Collision Risk Model",
-  "issueTracker": "www.github.com/HiDef-Aerial-Surveying/stochLAB/issues",
+  "issueTracker": "www.github.com/MarineScotlandScience/stochLAB/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
   "version": "0.3.1",
   "programmingLanguage": {
@@ -18,7 +18,7 @@
       "@type": "Person",
       "givenName": "Grant",
       "familyName": "Humphries",
-      "email": "grant.humphries@hidefsurveying.co.uk"
+      "email": "grwhumphries@blackbawks.net"
     },
     {
       "@type": "Person",
@@ -34,7 +34,7 @@
     },
     {
       "@type": "Organization",
-      "name": "HiDef"
+      "name": "Black Bawks Data Science"
     },
     {
       "@type": "Organization",
@@ -52,7 +52,7 @@
       "@type": "Person",
       "givenName": "Grant",
       "familyName": "Humphries",
-      "email": "grant.humphries@hidefsurveying.co.uk"
+      "email": "grwhumphries@blackbawks.net"
     }
   ],
   "softwareSuggestions": [
@@ -280,10 +280,10 @@
         }
       ],
       "name": "Estimating bird collisions at offshore windfarms with {stochLAB}",
-      "url": "https://hidef-aerial-surveying.github.io/stochLAB"
+      "url": "https://marinescotlandscience.github.io/stochLAB"
     }
   ],
-  "codeRepository": "https://github.com/HiDef-Aerial-Surveying/stochLAB",
-  "readme": "https://github.com/HiDef-Aerial-Surveying/stochLAB/blob/master/README.md",
+  "codeRepository": "https://github.com/MarineScotlandScience/stochLAB",
+  "readme": "https://github.com/MarineScotlandScience/stochLAB/blob/master/README.md",
   "keywords": ["collision-risk", "offshore-wind", "seabirds", "migratoryspecies"]
 }

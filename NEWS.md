@@ -1,4 +1,5 @@
 # stochLAB 1.1.3
+* Updated links to point to Marine Scotland Science
 
 # stochLAB 1.1.2
 

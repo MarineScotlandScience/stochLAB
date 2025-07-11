@@ -1,10 +1,10 @@
-url: https://hidef-aerial-surveying.github.io/stochLAB/
+url: https://marinescotlandscience.github.io/stochLAB/
 template:
   bootstrap: 5
 
 authors:
-  HiDef:
-    href: "https://www.hidefsurveying.co.uk/"
-    html: "<img src='https://github.com/HiDef-Aerial-Surveying.png' alt='HiDef surveying' width=72>"
+  Black Bawks:
+    href: "https://www.blackbawks.net/"
+    html: "<img src='https://github.com/blackbawks.png' alt='Black Bawks' width=72>"
   sidebar:
     roles: [cre, aut, fnd, cph]

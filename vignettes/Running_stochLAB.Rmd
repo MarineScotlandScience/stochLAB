@@ -55,7 +55,7 @@ You can install the development version with:
 
 ```r
 # install.packages("devtools")
-devtools::install_github("HiDef-Aerial-Surveying/stochLAB")
+devtools::install_github("MarineScotlandScience/stochLAB")
 ```
 
 
