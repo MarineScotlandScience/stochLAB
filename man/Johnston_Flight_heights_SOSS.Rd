@@ -20,7 +20,7 @@ E.G., ArcticSkua.est is the maximum likelihood estimate from  those models.
 }
 }
 \source{
-\url{https://www.bto.org/our-science/wetland-and-marine/soss/projects}
+\url{https://www.bto.org/our-work/science/research-areas/wetland-and-marine/soss}
 }
 \usage{
 Johnston_Flight_heights_SOSS

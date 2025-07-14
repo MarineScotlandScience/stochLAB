@@ -25,7 +25,7 @@
 #'   .med is the median estimate.}
 #'   \item{prop}{The proportion of birds within the 1m flight height bands.}
 #' }
-#' @source \url{https://www.bto.org/our-science/wetland-and-marine/soss/projects}
+#' @source \url{https://www.bto.org/our-work/science/research-areas/wetland-and-marine/soss}
 "Johnston_Flight_heights_SOSS"
 
 

@@ -175,7 +175,7 @@ band_crm(
 \seealso{
 Useful links:
 \itemize{
-\item \url{https://github.com/HiDef-Aerial-Surveying/stochLAB}
-\item Report bugs at \url{https://github.com/HiDef-Aerial-Surveying/stochLAB/issues}
+\item \url{https://github.com/MarineScotlandScience/stochLAB}
+\item Report bugs at \url{https://github.com/MarineScotlandScience/stochLAB/issues}
 }
 }

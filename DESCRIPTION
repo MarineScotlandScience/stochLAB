@@ -21,7 +21,7 @@ Description: Collision Risk Models for avian fauna (seabird and migratory birds)
     British Trust for Ornithology. These collision risk models are useful for 
     marine ornithologists who are working in the offshore wind industry, particularly 
     in UK waters. However, many of the species included in the stochastic collision 
-    risk models (stoch_crm) can also be found in the North Atlantic in the 
+    risk models can also be found in the North Atlantic in the 
     United States and Canada, and could be applied there. 
 License: GPL (>= 3)
 Depends: 
@@ -54,5 +54,5 @@ Roxygen: list(markdown = TRUE)
 URL: https://github.com/MarineScotlandScience/stochLAB,
     https://marinescotlandscience.github.io/stochLAB/
 BugReports: https://github.com/MarineScotlandScience/stochLAB/issues
-RoxygenNote: 7.2.2
+RoxygenNote: 7.2.3
 VignetteBuilder: knitr

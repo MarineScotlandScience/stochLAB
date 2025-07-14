@@ -1,8 +1,8 @@
 citHeader("To cite stochLAB in publications use:")
 
-citEntry(entry = "Manual",
+bibentry(bibtype = "Manual",
   title        = "Estimating bird collisions at offshore windfarms with {stochLAB}",
-  author       = personList(as.person("Bruno Caneco"),
+  author       = c(as.person("Bruno Caneco"),
                    as.person("Grant Humphries"),
                    as.person("Aonghais Cook"),
                    as.person("Elizabeth Masden")),
@@ -13,5 +13,5 @@ citEntry(entry = "Manual",
   textVersion  =
   paste("Bruno Caneco, Grant Humphries, Aonghais Cook, Elizabeth Masden (2022).",
         "Estimating bird collisions at offshore windfarms with stochLAB",
-        "URL https://marinescotlandscience.github.io/stochLAB/")
+        "URL https://marinescotlandscience.github.io/stochLAB/"),
 )
