@@ -13,8 +13,7 @@ Authors@R: c(
     person("HiDef", role = "cph"),
     person("DMPstats", role = "cph"),
     person("Kelly", "Street", role = "rev", 
-           comment = c(GITHUB = "@kstreet13"))
-)
+           comment = c(GITHUB = "@kstreet13")))
 Description: Collision Risk Models for avian fauna (seabird and migratory birds) at
     offshore wind farms. The base deterministic model is derived from 
     Band (2012) <https://tethys.pnnl.gov/publications/using-collision-risk-model-assess-bird-collision-risks-offshore-wind-farms>. 
