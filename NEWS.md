@@ -1,4 +1,8 @@
 # stochLAB 1.1.4
+* Updated to address issues 36, 33, 29 and 28
+  * Includes an update to documentation on flap/glide and rotor speed
+  * Includes update to spelling of GBBG to fix the error when running
+  * Includes updating package description to latest idiom
 
 # stochLAB 1.1.3
 * Updated links to point to Marine Scotland Science
