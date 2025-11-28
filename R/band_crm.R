@@ -196,6 +196,9 @@ band_crm <- function(model_options = c('1', '2', '3', '4'),
            `model_options`comprise '1' and/or '2', or `lrg_arr_corr` == TRUE.
            Calculations under the Basic Model underlying Options 1 and 2, and the
            large array correction, expect a specific value of avoidance rate.")
+    }
+    else if (!between(avoid_rt_basic,0,1)){
+     stop("`avoid_rt_basic` must be between 0 and 1.")
     }}
 
   if (any(model_options %in% c('3', '4'))) {
@@ -204,8 +207,11 @@ band_crm <- function(model_options = c('1', '2', '3', '4'),
            `model_options`comprise values '3' and/or '4'. Calc2lations under the
            Extended Model underlying Options 3 and 4 expect a specific value of
            avoidance rate.")
-    }}
-
+    }
+    else if (!between(avoid_rt_ext,0,1)){
+      stop("`avoid_rt_ext` must be between 0 and 1.")
+    }
+    }
 
   if (any(model_options %in% c('2', '3'))) {
     if (is.null(gen_fhd)) {

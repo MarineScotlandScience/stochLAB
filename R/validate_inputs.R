@@ -292,6 +292,9 @@ validate_inputs <- function(model_options,
                       i = "Calculations under the Basic Model underlying Options 1 and 2, ",
                       i = "and the large array correction, expect a specific value of avoidance rate.")
         )
+      }
+      else if (!dplyr::between(avoid_bsc_pars$mean,0,1)){
+        stop("`avoid_bsc_pars` mean value must be between 0 and 1")
       }}
 
     if (any(model_options %in% c('3', '4'))) {
@@ -302,6 +305,9 @@ validate_inputs <- function(model_options,
                       i = "Calculations under Extended Basic Model underlying Options 3 and 4, ",
                       i = "expect a specific value of avoidance rate.")
         )
+      }
+      else if (!dplyr::between(avoid_ext_pars$mean,0,1)){
+        stop("`avoid_ext_pars` mean value must be between 0 and 1")
       }}
 
     # calculations required for part of the next checks
