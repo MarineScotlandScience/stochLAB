@@ -2,6 +2,7 @@
 % Please edit documentation in R/stochLAB.R
 \docType{package}
 \name{stochLAB}
+\alias{stochLAB-package}
 \alias{stochLAB}
 \title{stochLAB: Stochastic Collision Risk Model}
 \description{
@@ -111,7 +112,7 @@ params <- data.frame(
   noct_activity = 0.5,         # proportion of day birds are inactive
   prop_crh_surv = 0.13,        # proportion of birds at collision risk height (option 1 only)
   prop_upwind = 0.5,           # proportion of flights that are upwind
-  rotor_speed = 15,            # rotor speed in m/s
+  rotor_speed = 15,            # rotor speed in revolutions/minute
   rotor_radius = 120,          # radius of turbine in m
   blade_width = 5,             # width of turbine blades at thickest point in m
   blade_pitch = 15,            # mean radius pitch in Radians
@@ -178,4 +179,24 @@ Useful links:
 \item \url{https://github.com/MarineScotlandScience/stochLAB}
 \item Report bugs at \url{https://github.com/MarineScotlandScience/stochLAB/issues}
 }
+}
+\author{
+\strong{Maintainer}: Grant Humphries \email{grwhumphries@blackbawks.net} (\href{https://orcid.org/0000-0001-5783-9892}{ORCID})
+
+Authors:
+\itemize{
+  \item Bruno Caneco \email{bruno@dmpstats.com}
+  \item Aonghais Cook \email{aonghais.cook@bto.org}
+  \item Elizabeth Masden \email{elizabeth.masden@uhi.ac.uk}
+}
+
+Other contributors:
+\itemize{
+  \item Marine Scotland [funder, copyright holder]
+  \item Black Bawks [copyright holder]
+  \item HiDef [copyright holder]
+  \item DMPstats [copyright holder]
+  \item Kelly Street (@kstreet13) [reviewer]
+}
+
 }

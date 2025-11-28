@@ -9,7 +9,7 @@
 #'  * [band_crm()]: Deterministic Collision Risk Model,
 #'  * [mig_stoch_crm()]: Stochastic Migration Collision risk Model
 #'
-#' @docType package
+#' @keywords internal
 #' @name stochLAB
 #'
 #' @section Overview:
@@ -99,8 +99,4 @@
 #' Useful links:
 #' * <https://github.com/MarineScotlandScience/stochLAB>
 #' * Report bugs at <https://github.com/MarineScotlandScience/stochLAB/issues>
-
-
-
-NULL
-#> NULL
+"_PACKAGE"

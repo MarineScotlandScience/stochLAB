@@ -253,7 +253,7 @@ params <- data.frame(
   noct_activity = 0.5,         # proportion of day birds are inactive
   prop_crh_surv = 0.13,        # proportion of birds at collision risk height (option 1 only)
   prop_upwind = 0.5,           # proportion of flights that are upwind
-  rotor_speed = 15,            # rotor speed in m/s
+  rotor_speed = 15,            # rotor speed in revolutions/minute
   rotor_radius = 120,          # radius of turbine in m
   blade_width = 5,             # width of turbine blades at thickest point in m
   blade_pitch = 15,            # mean radius pitch in Radians
