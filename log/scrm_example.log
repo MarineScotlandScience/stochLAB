@@ -11,7 +11,7 @@ Machine: LAPTOP-II6O2V75 x86-64
 Operating System: Windows 10 x64 build 26100
 Base Packages: stats graphics grDevices utils datasets methods base
 Other Packages: stochLAB_1.1.3
-Log Start Time: 2025-11-28 15:12:44.372955
+Log Start Time: 2025-11-28 15:14:38.354027
 =========================================================================
 
 Stochastic CRM run details --------------------------- Number of iterations:
@@ -20,6 +20,6 @@ speed and blade pitch sampling: windSpeedReltn Output format: summaries Output
 period: seasons
 
 =========================================================================
-Log End Time: 2025-11-28 15:12:50.846326
-Log Elapsed Time: 0 00:00:06
+Log End Time: 2025-11-28 15:14:43.8476
+Log Elapsed Time: 0 00:00:05
 =========================================================================
