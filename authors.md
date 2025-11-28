@@ -27,7 +27,7 @@
 ## Citation
 
 Source:
-[`inst/CITATION`](https://github.com/MarineScotlandScience/stochLAB/blob/main/inst/CITATION)
+[`inst/CITATION`](https://github.com/MarineScotlandScience/stochLAB/blob/v1.1.4/inst/CITATION)
 
 Bruno Caneco, Grant Humphries, Aonghais Cook, Elizabeth Masden (2022).
 Estimating bird collisions at offshore windfarms with stochLAB URL

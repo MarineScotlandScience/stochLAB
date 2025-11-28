@@ -558,20 +558,19 @@ stoch_crm(
 #> ── Stochastic CRM ──
 #> 
 #> ℹ Checking inputs
-#> ✔ Checking inputs [14ms]
+#> ✔ Checking inputs [15ms]
 #> 
 #> ℹ Preparing data
-#> ✔ Preparing data [28ms]
+#> ✔ Preparing data [27ms]
 #> 
 #> ℹ Sampling parameters
 #> ✔ Sampling parameters [122ms]
 #> 
 #> ⠙ Calculating collisions | 3/1000 iterations
-#> ⠹ Calculating collisions | 309/1000 iterations
 #> ✔ Calculating collisions | 1000/1000 iterations [1.4s]
 #> 
 #> ℹ Sorting outputs
-#> ✔ Sorting outputs [644ms]
+#> ✔ Sorting outputs [476ms]
 #> 
 #> ✔ Job done!
 #> $collisions

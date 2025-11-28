@@ -3,7 +3,7 @@ pkgdown: 2.2.0
 pkgdown_sha: ~
 articles:
   Running_stochLAB: Running_stochLAB.html
-last_built: 2025-11-28T16:13Z
+last_built: 2025-11-28T16:19Z
 urls:
   reference: https://marinescotlandscience.github.io/stochLAB/reference
   article: https://marinescotlandscience.github.io/stochLAB/articles

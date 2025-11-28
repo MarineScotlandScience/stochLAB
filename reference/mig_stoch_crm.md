@@ -297,13 +297,13 @@ mig_stoch_crm(
 #> ── Stochastic CRM for Migratory birds ──
 #> 
 #> ℹ Checking for manditory arguments
-#> ✔ Checking for manditory arguments [7ms]
+#> ✔ Checking for manditory arguments [8ms]
 #> 
 #> ℹ Data validation
-#> ✔ Data validation [16ms]
+#> ✔ Data validation [17ms]
 #> 
 #> ℹ Sampling data
-#> ✔ Sampling data [27ms]
+#> ✔ Sampling data [29ms]
 #> 
 #> ℹ Running simulation...
 #> ✔ Running simulation... [1.3s]
