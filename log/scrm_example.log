@@ -1,0 +1,25 @@
+=========================================================================
+Log Path: C:/Users/humph/Black Bawks
+Dropbox/Black_Bawks/R_PACKAGES/stochLAB/log/scrm_example.log
+Program Path: C:/Users/humph/Black Bawks
+Dropbox/Black_Bawks/R_PACKAGES/stochLAB/examples/stoch_crm_example.r
+Working Directory: C:/Users/humph/Black Bawks
+Dropbox/Black_Bawks/R_PACKAGES/stochLAB
+User Name: humph
+R Version: 4.5.1 (2025-06-13 ucrt)
+Machine: LAPTOP-II6O2V75 x86-64
+Operating System: Windows 10 x64 build 26100
+Base Packages: stats graphics grDevices utils datasets methods base
+Other Packages: stochLAB_1.1.3
+Log Start Time: 2025-11-28 15:12:44.372955
+=========================================================================
+
+Stochastic CRM run details --------------------------- Number of iterations:
+1000 Chosen CRM Options: `1', '2' and '3' Bird density sampling: tnorm Rotation
+speed and blade pitch sampling: windSpeedReltn Output format: summaries Output
+period: seasons
+
+=========================================================================
+Log End Time: 2025-11-28 15:12:50.846326
+Log Elapsed Time: 0 00:00:06
+=========================================================================

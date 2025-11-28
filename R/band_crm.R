@@ -197,7 +197,7 @@ band_crm <- function(model_options = c('1', '2', '3', '4'),
            Calculations under the Basic Model underlying Options 1 and 2, and the
            large array correction, expect a specific value of avoidance rate.")
     }
-    else if (!between(avoid_rt_basic,0,1)){
+    else if (!dplyr::between(avoid_rt_basic,0,1)){
      stop("`avoid_rt_basic` must be between 0 and 1.")
     }}
 
@@ -208,7 +208,7 @@ band_crm <- function(model_options = c('1', '2', '3', '4'),
            Extended Model underlying Options 3 and 4 expect a specific value of
            avoidance rate.")
     }
-    else if (!between(avoid_rt_ext,0,1)){
+    else if (!dplyr::between(avoid_rt_ext,0,1)){
       stop("`avoid_rt_ext` must be between 0 and 1.")
     }
     }

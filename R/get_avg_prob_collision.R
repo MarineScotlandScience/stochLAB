@@ -18,7 +18,8 @@
 #' @param prop_upwind Numeric value between 0-1 giving the proportion of
 #'   flights upwind - defaults to 0.5.
 #' @param flap_glide Numeric value representing the correction for flapping or
-#'   gliding birds (\eqn{F}).
+#'   gliding birds. Gliding birds have a value of 2/pi while flapping
+#'   birds have a value of 1. (\eqn{F}).
 #' @param rotor_speed Numeric value. The operational rotation speed, in
 #'   revolutions/min.
 #' @param rotor_radius Numeric value. The radius of the rotor (\eqn{R}), in
